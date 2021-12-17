@@ -38,10 +38,18 @@
     </div>
     <div class="self-center ml-8">
       <button
-        class="px-6 py-2 text-white bg-green-700 rounded hover:bg-green-900"
+        class="
+          px-6
+          py-2
+          text-white
+          bg-green-700
+          rounded
+          hover:bg-green-900
+          rounded-full
+        "
         @click="fetch"
       >
-        Retrieve
+        Search
       </button>
     </div>
   </div>

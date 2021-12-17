@@ -25,6 +25,7 @@ import Layout from "./components/Layout.vue";
 import NewsFilter from "./components/NewsFilter.vue";
 import NewsList from "./components/NewsList.vue";
 const api = import.meta.env.VITE_NYT_API_KEY;
+
 export default {
   components: {
     Layout,
