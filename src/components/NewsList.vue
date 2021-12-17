@@ -16,19 +16,15 @@
 
 <script>
 import NewsCard from "./NewsCard.vue";
-
 export default {
   props: {
     posts: {
       type: Array,
       required: true,
     },
-    components: {
-      NewsCard,
-    },
+  },
+  components: {
+    NewsCard,
   },
 };
 </script>
-
-<style>
-</style>

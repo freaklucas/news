@@ -38,16 +38,10 @@
     </div>
     <div class="self-center ml-8">
       <button
-        class="
-          px-6
-          py-2
-          text-white
-          bg-green-700
-          rounded-full
-          hover:bg-green-900
-        "
+        class="px-6 py-2 text-white bg-green-700 rounded hover:bg-green-900"
+        @click="fetch"
       >
-        Search
+        Retrieve
       </button>
     </div>
   </div>
@@ -56,17 +50,16 @@
 <script>
 import { computed } from "vue";
 import sectionsData from "./sections";
-
 export default {
   props: {
     modelValue: String,
+    fetch: Function,
   },
   setup(props, { emit }) {
     const section = computed({
       get: () => props.modelValue,
-      set: () => emit("update:modelValue", value),
+      set: (value) => emit("update:modelValue", value),
     });
-
     return {
       section,
     };
