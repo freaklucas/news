@@ -1,5 +1,5 @@
 <template>
-  <section class="p-4 rounded-lg shadow-lg bg-gray-50 w-80">
+  <section class="p-4 rounded-lg shadow-2xl bg-grey-900 w-80">
     <div class="h-96">
       <a
         class="
@@ -26,9 +26,7 @@
       </p>
     </div>
     <div>
-      <p class="mt-4 font-bold text-gray-600">
-        {{ post.byline }}
-      </p>
+      <p class="mt-4 font-bold text-gray-600">{{ post.byline }}</p>
       <p class="font-light text-gray-600">
         {{ formatDate(post.published_date) }}
       </p>
@@ -38,7 +36,6 @@
 
 <script>
 import { format } from "date-fns";
-
 export default {
   props: {
     post: {
@@ -53,6 +50,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
